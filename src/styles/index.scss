@@ -1,0 +1,212 @@
+$uiDark: #0a2b41;
+$uiWhite: #ffffff;
+$uiLight: #ffffff;
+$uiGrey: #8495a0;
+$uiPrimary: #0077c4;
+$uiMedGrey: #d1dce2;
+$uiLightGrey: #edf3f5;
+$uiLighterGrey: #f6f9fa;
+$uiDanger: #e94d31;
+$uiSuccess: #70d881;
+$uiNeutral: #9ea7ac;
+$uiOrange: #f2b458;
+$uiLogo: #f2eaf0;
+// Font Size
+$headingLarge: bold 32px Open Sans;
+$headingMedium: bold 24px Open Sans;
+$headingSmall: bold 16px 'Open Sans';
+$headingVerySmall: bold 12px Open Sans;
+
+$contentLarge: 20px Open Sans;
+$contentMedium: 16px Open Sans;
+$contentSmall: 14px Open Sans;
+$contentVerySmall: 12px Open Sans;
+$contentTiny: 10px Open Sans;
+$contentLargeB: bold 20px Open Sans;
+$contentMediumB: bold 16px Open Sans;
+$contentSmallB: bold 14px Open Sans;
+$contentVerySmallB: bold 12px Open Sans;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+address,
+del,
+dfn,
+em,
+img,
+ins,
+strong,
+sub,
+sup,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+html {
+  overflow-y: scroll;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: #007ebe;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
+input[type='checkbox'] {
+  vertical-align: bottom;
+}
+
+.clickable,
+label,
+input[type='button'],
+input[type='submit'],
+input[type='file'],
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+button,
+input[type='button'] {
+  width: auto;
+  overflow: visible;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+
+body {
+  font: 400 16px/1 'Open Sans';
+  background-color: #fff;
+}
+
+select,
+input,
+textarea,
+button {
+  font: 100% 'Open Sans';
+}
+
+#root {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}

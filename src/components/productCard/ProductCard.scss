@@ -1,0 +1,67 @@
+@import '../../styles/index.scss';
+
+.ImageContainer {
+  width: 18rem;
+  height: 18rem;
+  object-fit: contain;
+}
+
+.cardContainer {
+  width: 18rem;
+  border-radius: 8px;
+  margin: 1.8rem;
+}
+
+.productTitle {
+  font: $contentMediumB;
+  color: $uiDark;
+  margin: 1rem 0rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 3rem;
+}
+
+.productDescription {
+  font: $contentSmall;
+  line-height: 1.5em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 4rem;
+  color: $uiDark;
+}
+
+.productprice {
+  // color: $uiWhite;
+  height: 1.5rem;
+}
+
+.productDetails {
+  color: $uiDark;
+  padding: 0.5rem;
+  background: $uiLogo;
+  color: $uiWhite;
+  overflow: hidden;
+}
+.productCart {
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $uiWhite;
+  background: #ab89a2;
+  border-radius: 0px 0px 8px 8px;
+  cursor: pointer;
+}
+
+.cardContainer:hover {
+  box-shadow: 5px 2px 8px 3px #f1e6f5;
+}
+.bottomBorder {
+  border-bottom: 1px solid #ab89a2;
+  text-align: center;
+}

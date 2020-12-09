@@ -1,0 +1,16 @@
+@import '../../styles/index.scss';
+
+.totalPrice {
+  height: 50px;
+  margin-left: 1rem;
+  align-items: center;
+  display: flex;
+}
+
+.totalPricestyle {
+  font: $contentMediumB;
+}
+
+.cartPageContainer {
+  margin: 5rem 1rem;
+}

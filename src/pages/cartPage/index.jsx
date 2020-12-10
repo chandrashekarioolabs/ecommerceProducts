@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { CardCart, Header, Footer } from 'Component';
-import { addproductToCart } from 'Redux/actions';
+import { addproductToCart, userSignOut } from 'Redux/actions';
 import { withRouter } from 'react-router-dom';
 import './index.scss';
 
@@ -71,6 +71,6 @@ const mapPropsTOState = (state) => {
   return { ...products };
 };
 
-export default connect(mapPropsTOState, { addproductToCart })(
+export default connect(mapPropsTOState, { addproductToCart, userSignOut })(
   withRouter(CartPage)
 );

@@ -3,6 +3,7 @@ import {
   USER_SIGN_IN_FAILURE,
   ERROR_MESSAGE,
   SUCCESS_MESSAGE,
+  USER_SIGN_OUT,
 } from '../types';
 import { auth } from 'Pages/firebase';
 
@@ -37,7 +38,7 @@ export const userSignOut = (cb) => {
     auth
       .signOut()
       .then(() => {
-        dispatch({ type: USER_SIGN_IN_FAILURE, payload: false });
+        dispatch({ type: USER_SIGN_OUT, payload: false });
         dispatch({
           type: SUCCESS_MESSAGE,
           payload: {
@@ -49,7 +50,7 @@ export const userSignOut = (cb) => {
         if (cb) cb();
       })
       .catch(function (error) {
-        dispatch({ type: USER_SIGN_IN_FAILURE, payload: false });
+        dispatch({ type: USER_SIGN_OUT, payload: false });
         dispatch({
           type: ERROR_MESSAGE,
           payload: { message: err.message, show: true, type: 'error' },

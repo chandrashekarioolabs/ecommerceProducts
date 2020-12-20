@@ -8,11 +8,13 @@ In the project directory, you can run:
 
 ### `yarn start or npm start`
 
+
 Runs the app in the development mode.\
 
 Open [http://localhost:8800](http://localhost:8800) to view it in the browser.
 
 
-### `yarn storybook or npm storybook`
+### `yarn storybook`
 
-Launches the storybook to see the components in your local
+Launches the storybook to see the components.\
+

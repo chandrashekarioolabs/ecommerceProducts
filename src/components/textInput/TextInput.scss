@@ -1,0 +1,41 @@
+@import '../../styles/index.scss';
+
+.textInput {
+  background: $uiWhite;
+  border: 1px solid $uiGrey;
+  border-radius: 8px;
+  min-width: 242px;
+  color: $uiDark;
+  font: $contentMedium;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  padding: 10px;
+}
+
+.label {
+  font: $contentSmall;
+  color: $uiDark;
+}
+.borderError {
+  border: 1px solid #e94d31;
+  border-radius: 8px;
+}
+
+.errorStyle {
+  font: $contentVerySmall;
+  color: $uiDanger;
+}
+.inputContainer {
+  margin: 10px 0px;
+  height: 70px;
+  margin-bottom: 1.5rem;
+}
+
+.inputContainer input::placeholder {
+  color: $uiGrey;
+  font: $contentSmall;
+}

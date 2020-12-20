@@ -1,0 +1,29 @@
+@import '../../styles/index.scss';
+
+.button {
+  font-size: 14px;
+  min-width: 200px;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+}
+
+.button_Primary {
+  color: #ffffff;
+  background: #0077c4;
+  border: 0px;
+  border-radius: 8px;
+}
+.button_Large {
+  height: 48px;
+}
+.button_Small {
+  height: 40px;
+}
+
+.button_Secondary {
+  background: transparent;
+  border: 1px solid $uiDark;
+  border-radius: 8px;
+  color: $uiDark;
+}

@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -15,6 +20,191 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <style type="text/css">
+      html,
+      body,
+      div,
+      span,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      pre,
+      address,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      strong,
+      sub,
+      sup,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      figure,
+      footer,
+      header,
+      menu,
+      nav,
+      section,
+      time,
+      mark,
+      audio,
+      video,
+      details,
+      summary {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-family: 'Open Sans';
+        font-size: 100%;
+        font-weight: normal;
+        vertical-align: baseline;
+        background: transparent;
+        box-sizing: border-box;
+      }
+
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+      html {
+        overflow-y: scroll;
+      }
+
+      ol,
+      ul {
+        list-style: none;
+      }
+
+      a {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        color: #007ebe;
+        text-decoration: none;
+      }
+
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      th {
+        font-weight: bold;
+        vertical-align: bottom;
+      }
+      td {
+        font-weight: normal;
+        vertical-align: top;
+      }
+
+      input,
+      select {
+        vertical-align: middle;
+      }
+      input[type='radio'] {
+        vertical-align: text-bottom;
+      }
+      input[type='checkbox'] {
+        vertical-align: bottom;
+      }
+
+      .clickable,
+      label,
+      input[type='button'],
+      input[type='submit'],
+      input[type='file'],
+      button {
+        cursor: pointer;
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        margin: 0;
+      }
+      button,
+      input[type='button'] {
+        width: auto;
+        overflow: visible;
+      }
+
+      .clearfix:before,
+      .clearfix:after {
+        content: '\0020';
+        display: block;
+        height: 0;
+        overflow: hidden;
+      }
+      .clearfix:after {
+        clear: both;
+      }
+      .clearfix {
+        zoom: 1;
+      }
+
+      body {
+        font: 400 16px/1 'Open Sans';
+        background-color: #fff;
+      }
+
+      select,
+      input,
+      textarea,
+      button {
+        font: 100% 'Open Sans';
+      }
+
+      #root {
+        position: relative;
+        clear: both;
+        margin: 0 auto;
+        padding: 0;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -39,5 +229,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
   </body>
 </html>

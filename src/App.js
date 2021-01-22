@@ -5,7 +5,6 @@ import { store, persistor } from './redux/store';
 import Routes from './router';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import SnackBarMessage from './utils/snackbar.jsx';
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
           <Routes />
-          <SnackBarMessage />
         </BrowserRouter>
       </PersistGate>
     </Provider>

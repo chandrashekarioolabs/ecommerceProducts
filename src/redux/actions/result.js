@@ -1,21 +1,13 @@
-import { ERROR_MESSAGE, SUCCESS_MESSAGE } from '../types';
+import { GET_PRODUCTS_SUCCESS } from '../types';
+import { getRepository } from '../../api';
 
-const sanckBarMessage = (type) => ({
-  type,
-  payload: {
-    message: '',
-    show: false,
-    type: '',
-  },
-});
-
-export const clearSuccessSnackbar = () => {
+export const getRepositoryList = (data) => {
   return (dispatch) => {
-    dispatch(sanckBarMessage(SUCCESS_MESSAGE));
-  };
-};
-export const clearErrorSnackbar = () => {
-  return (dispatch) => {
-    dispatch(sanckBarMessage(ERROR_MESSAGE));
+    getRepository(data).then((res) => {
+      dispatch({
+        type: GET_PRODUCTS_SUCCESS,
+        payload: { count: res.data.total_count, data: res.data.items },
+      });
+    });
   };
 };

@@ -6,3 +6,4 @@ export { default as LoginCard } from './loginCard';
 export { default as Header } from './nav/Header';
 export { default as Footer } from './nav/Footer';
 export { default as CardCart } from './cartCard';
+export { default as ProfileCard } from './profileCard';

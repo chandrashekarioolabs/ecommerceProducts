@@ -20,6 +20,12 @@
 .repo_name {
   font: $contentMediumB;
   margin-top: 1rem;
+  line-height: 1.5em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .repo_desc {
   font: $contentMedium;

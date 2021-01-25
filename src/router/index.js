@@ -8,7 +8,7 @@ export default function Routes({ ...props }) {
   return (
     <>
       <Switch>
-        <Route exact path='/' component={SearchRepository} />
+        <PrivateRoute exact path='/' component={SearchRepository} />
         <Route path='/404' component={NotFound} />
         <Route path='*' render={() => <Redirect to='/404' />} />
       </Switch>

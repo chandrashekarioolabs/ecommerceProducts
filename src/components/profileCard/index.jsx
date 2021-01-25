@@ -11,10 +11,10 @@ export default class ProfileCard extends React.Component {
           Repo Name: {this.props.full_name}
         </a>
         <p className={styles.repo_desc}>Owner Name: {this.props.owner.login}</p>
-        <p className={styles.repo_desc}>
+        <span className={styles.repo_desc}>
           Description: <br></br>
           {this.props.description}
-        </p>
+        </span>
         <p className={styles.repo_desc}>Stars: {this.props.stargazers_count}</p>
         <p className={styles.repo_desc}>Updated At: {this.props.updated_at}</p>
       </div>

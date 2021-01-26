@@ -8,11 +8,11 @@
   align-self: center;
 }
 .profileCard {
-  box-shadow: 5px 2px 8px 3px #f1e6f5;
   display: flex;
   padding: 1rem;
   color: $uiDark;
   margin-bottom: 1rem;
+  border-bottom: 1px solid $uiLightGrey;
 }
 
 .profileDetail {

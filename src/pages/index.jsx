@@ -53,7 +53,7 @@ class SearchRepository extends React.Component {
                 full_name={el.full_name}
                 owner={el.owner}
                 stargazers_count={el.stargazers_count}
-                updated_at={el.updated_at}
+                updated_at={new Date(el.updated_at).toDateString()}
                 description={el.description}
               />
             );

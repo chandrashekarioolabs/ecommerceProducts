@@ -10,9 +10,9 @@
 
 .mainContainer {
   display: flex;
-  flex-direction: row;
-  max-width: 100%;
-  flex-wrap: wrap;
+  flex-direction: column;
+  // max-width: 100%;
+  // flex-wrap: wrap;
   margin: 5rem 1rem;
   justify-content: space-around;
 }
